@@ -1,0 +1,14 @@
+version: "3.0"
+
+services:
+  connectedhomeip:
+    container_name: ${CONTAINER_BASE_NAME}_connectedhomeip
+    build: ./connectedhomeip
+    image: connectedhomeip_espidf
+    restart: always
+    privileged: true
+    tty: true
+    stdin_open: true
+    volumes:
+      - /dev:/dev
+      - ./workspace:/home/work/workspace
