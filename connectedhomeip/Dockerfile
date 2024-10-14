@@ -7,7 +7,7 @@ RUN apt upgrade -y
 RUN apt install -y git gcc g++ pkg-config libssl-dev libdbus-1-dev \
     libglib2.0-dev libavahi-client-dev ninja-build python3-venv python3-dev \
     python3-pip unzip libgirepository1.0-dev libcairo2-dev libreadline-dev
-RUN apt install -y libnss3 apt-get install libatk1.0-0 libatk-bridge2.0-0 \
+RUN apt install -y libnss3 libatk1.0-0 libatk-bridge2.0-0 \
     libcups2 libgtk-3-dev 
 
 RUN mkdir ~/.ssh
